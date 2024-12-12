@@ -1,6 +1,6 @@
 # README
 
-Este repositório contém um projeto em Python utilizado para extrair dados de um banco de dados Oracle SQL, gerar e enviar e-mails personalizados com uma estrutura HTML e com os resultados de uma pesquisa de satisfação (NPS) para médicos.
+Este repositório contém um projeto em Python utilizado para extrair dados de um banco de dados Oracle SQL, gerar e enviar e-mails personalizados com uma estrutura HTML e com os resultados de uma pesquisa de satisfação (NPS) para médicos. Esse projeto foi implementado no Jenkins, para rodar de forma 100% automática!
 
 Infelizmente tive que botar o template HTML no gitignore, pois tinha muitas informações da empresa, como endereços, contatos, etc...
 
