@@ -4,16 +4,17 @@ from email.mime.multipart import MIMEMultipart
 import datetime
 from jinja2 import Environment, FileSystemLoader
 from modules.logger import get_logger
+from modules.config import SMTP_PORT, ZIMBRA_EMAIL_PASSWORD, ZIMBRA_EMAIL, SMTP_SERVER
 import os
 
 # Configuração de logs
 logger = get_logger()
 
 # Configurações do servidor SMTP
-smtp_server = os.getenv('SMTP_SERVER')
-port = os.getenv('SMTP_PORT')
-username = os.getenv('ZIMBRA_EMAIL')
-password = os.getenv('ZIMBRA_EMAIL_PASSWORD')
+smtp_server = SMTP_SERVER
+port = SMTP_PORT
+username = ZIMBRA_EMAIL
+password = ZIMBRA_EMAIL_PASSWORD
 
 def calculate_date() -> str:
     # Obtendo a data de hoje
